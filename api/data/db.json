@@ -1,0 +1,331 @@
+{
+  "users": [
+    {
+      "id": "385fb97f-a059-49e9-a8fc-a93a492ba8ea",
+      "email": "demo2@example.com",
+      "username": "demo2",
+      "passwordSalt": "0d7c59b5cea17ef110526ac993b4da05",
+      "passwordHash": "83524e0b74abbaa4e518a7b32471fd529676842bc98e918bf366c407011ec6f1",
+      "createdAt": "2026-05-09T09:08:15.508Z"
+    }
+  ],
+  "sessions": [
+    {
+      "token": "ebfa358c8078cec14ee96bf9ac623025acd94ec02dbd9949",
+      "userId": "385fb97f-a059-49e9-a8fc-a93a492ba8ea",
+      "expiresAt": "2026-05-23T09:08:15.508Z"
+    }
+  ],
+  "preferences": [
+    {
+      "userId": "385fb97f-a059-49e9-a8fc-a93a492ba8ea",
+      "language": "ja",
+      "level": "A1",
+      "dailyMinutes": 15,
+      "updatedAt": "2026-05-09T09:08:26.563Z"
+    }
+  ],
+  "courses": [
+    {
+      "id": "441a98ad-f25f-42ad-b84b-e7c41924631a",
+      "language": "en",
+      "level": "A1",
+      "title": "英语 A1｜日常开场白",
+      "description": "从招呼、自我介绍到点单，建立最常用的口语骨架。"
+    },
+    {
+      "id": "3ffd9d7a-71bd-48c5-b84d-8aaa7a4965f2",
+      "language": "ja",
+      "level": "A1",
+      "title": "日语 A1｜便利店与问路",
+      "description": "用最短句子完成购买、询问与基本应答。"
+    },
+    {
+      "id": "67107951-06ed-41a4-9b63-88f430860a7d",
+      "language": "ko",
+      "level": "A1",
+      "title": "韩语 A1｜第一次见面",
+      "description": "自我介绍、礼貌表达与基本句型练习。"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "49407467-dd17-4798-a3f9-6235a041d292",
+      "courseId": "441a98ad-f25f-42ad-b84b-e7c41924631a",
+      "unit": 1,
+      "title": "Hello & Nice to meet you",
+      "contentType": "dialogue",
+      "lines": [
+        {
+          "speaker": "A",
+          "text": "Hi! I’m Alex. Nice to meet you."
+        },
+        {
+          "speaker": "B",
+          "text": "Nice to meet you too. I’m Mina."
+        },
+        {
+          "speaker": "A",
+          "text": "Where are you from?"
+        },
+        {
+          "speaker": "B",
+          "text": "I’m from Seoul."
+        }
+      ],
+      "vocab": [
+        {
+          "term": "nice to meet you",
+          "meaning": "很高兴认识你"
+        },
+        {
+          "term": "where are you from",
+          "meaning": "你来自哪里"
+        }
+      ],
+      "grammar": [
+        {
+          "title": "I’m + 名字/身份",
+          "explanation": "用 I’m（= I am）做自我介绍，语气自然。",
+          "examples": [
+            "I’m Alex.",
+            "I’m a student."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4cb0867e-382b-48fa-853d-60a0b261011d",
+      "courseId": "441a98ad-f25f-42ad-b84b-e7c41924631a",
+      "unit": 2,
+      "title": "Ordering coffee",
+      "contentType": "dialogue",
+      "lines": [
+        {
+          "speaker": "You",
+          "text": "Can I get a latte, please?"
+        },
+        {
+          "speaker": "Barista",
+          "text": "Sure. Medium or large?"
+        },
+        {
+          "speaker": "You",
+          "text": "Medium, please."
+        }
+      ],
+      "vocab": [
+        {
+          "term": "Can I get…?",
+          "meaning": "我可以要/点…吗？"
+        },
+        {
+          "term": "medium",
+          "meaning": "中杯/中号"
+        },
+        {
+          "term": "large",
+          "meaning": "大杯/大号"
+        }
+      ],
+      "grammar": [
+        {
+          "title": "Can I get…?（礼貌点单）",
+          "explanation": "比 Give me… 更礼貌，适合点餐点饮料。",
+          "examples": [
+            "Can I get a latte?",
+            "Can I get two sandwiches?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6d011d0d-f1cb-445e-9358-3e3800f51cf0",
+      "courseId": "441a98ad-f25f-42ad-b84b-e7c41924631a",
+      "unit": 3,
+      "title": "Small talk starter",
+      "contentType": "article",
+      "lines": [
+        {
+          "text": "A simple way to start small talk is to ask about the day."
+        },
+        {
+          "text": "Try: “How’s your day going?” and follow up with “That sounds great.”"
+        }
+      ],
+      "vocab": [
+        {
+          "term": "small talk",
+          "meaning": "寒暄/闲聊"
+        },
+        {
+          "term": "follow up",
+          "meaning": "接着问/补充追问"
+        }
+      ],
+      "grammar": [
+        {
+          "title": "How’s … going?",
+          "explanation": "询问进展/状态的固定表达，语气随和。",
+          "examples": [
+            "How's it going?",
+            "How's your week going?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1e823647-3b83-48e3-85db-ebf7b5ad8485",
+      "courseId": "3ffd9d7a-71bd-48c5-b84d-8aaa7a4965f2",
+      "unit": 1,
+      "title": "こんにちは｜あいさつ",
+      "contentType": "dialogue",
+      "lines": [
+        {
+          "speaker": "A",
+          "text": "こんにちは。はじめまして。"
+        },
+        {
+          "speaker": "B",
+          "text": "はじめまして。よろしくお願いします。"
+        }
+      ],
+      "vocab": [
+        {
+          "term": "こんにちは",
+          "reading": "konnichiwa",
+          "meaning": "你好/下午好"
+        },
+        {
+          "term": "はじめまして",
+          "reading": "hajimemashite",
+          "meaning": "初次见面"
+        },
+        {
+          "term": "よろしくお願いします",
+          "reading": "yoroshiku onegaishimasu",
+          "meaning": "请多关照"
+        }
+      ],
+      "grammar": [
+        {
+          "title": "よろしくお願いします（固定表达）",
+          "explanation": "初次见面常用套语，礼貌自然。",
+          "examples": [
+            "はじめまして。よろしくお願いします。"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0179cf64-4ae6-4d5b-96cc-e01a726d636b",
+      "courseId": "67107951-06ed-41a4-9b63-88f430860a7d",
+      "unit": 1,
+      "title": "안녕하세요｜자기소개",
+      "contentType": "dialogue",
+      "lines": [
+        {
+          "speaker": "A",
+          "text": "안녕하세요. 저는 민지예요."
+        },
+        {
+          "speaker": "B",
+          "text": "안녕하세요. 만나서 반가워요."
+        }
+      ],
+      "vocab": [
+        {
+          "term": "안녕하세요",
+          "reading": "annyeonghaseyo",
+          "meaning": "你好"
+        },
+        {
+          "term": "저는 …예요",
+          "reading": "jeoneun …yeyo",
+          "meaning": "我是…"
+        },
+        {
+          "term": "반가워요",
+          "reading": "bangawoyo",
+          "meaning": "很高兴见到你"
+        }
+      ],
+      "grammar": [
+        {
+          "title": "저는 …예요/이에요",
+          "explanation": "自我介绍常用句型，…后接名字或身份。",
+          "examples": [
+            "저는 민지예요.",
+            "저는 학생이에요."
+          ]
+        }
+      ]
+    }
+  ],
+  "activity": [
+    {
+      "userId": "385fb97f-a059-49e9-a8fc-a93a492ba8ea",
+      "date": "2026-05-09",
+      "minutes": 12,
+      "correct": 0,
+      "total": 0
+    }
+  ],
+  "lessonProgress": [
+    {
+      "userId": "385fb97f-a059-49e9-a8fc-a93a492ba8ea",
+      "lessonId": "1e823647-3b83-48e3-85db-ebf7b5ad8485",
+      "completion": 1,
+      "updatedAt": "2026-05-09T09:08:40.111Z"
+    }
+  ],
+  "posts": [
+    {
+      "id": "7c8c2bce-88ee-46c7-88bb-ce2a28989979",
+      "authorId": "seed",
+      "title": "欢迎来到 LangLab 社区",
+      "content": "这里可以打卡、提问、纠错，也可以分享你的学习方法。先完成一节课，然后来发个帖吧！",
+      "createdAt": "2026-05-09T09:08:15.488Z",
+      "likeCount": 3,
+      "commentCount": 0
+    },
+    {
+      "id": "9fe8df5b-484d-4026-ac33-d90de7ca53db",
+      "authorId": "385fb97f-a059-49e9-a8fc-a93a492ba8ea",
+      "title": "打卡：今天完成第一课",
+      "content": "完成了推荐的日语 A1 第一课，准备开始做单词练习。",
+      "createdAt": "2026-05-09T09:10:16.526Z",
+      "likeCount": 0,
+      "commentCount": 0
+    }
+  ],
+  "achievements": [
+    {
+      "id": "first_lesson",
+      "name": "第一课完成",
+      "description": "完成任意一节课时学习。"
+    },
+    {
+      "id": "first_post",
+      "name": "第一次发帖",
+      "description": "在社区发布第一条帖子。"
+    },
+    {
+      "id": "streak_3",
+      "name": "连续 3 天",
+      "description": "连续学习 3 天（任意时长）。"
+    }
+  ],
+  "userAchievements": [
+    {
+      "userId": "385fb97f-a059-49e9-a8fc-a93a492ba8ea",
+      "achievementId": "first_lesson",
+      "earnedAt": "2026-05-09T09:08:40.111Z"
+    },
+    {
+      "userId": "385fb97f-a059-49e9-a8fc-a93a492ba8ea",
+      "achievementId": "first_post",
+      "earnedAt": "2026-05-09T09:10:16.526Z"
+    }
+  ]
+}
