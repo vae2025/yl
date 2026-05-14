@@ -1,0 +1,87 @@
+{
+  "keyword": "充电宝",
+  "items": [
+    {
+      "id": "2a4b782879ee993d513caa64",
+      "platform": "demo",
+      "title": "Baseus 倍思 10000mAh 充电宝 20W 快充",
+      "price": 59.9,
+      "url": "https://example.com/demo/baseus-powerbank-10000",
+      "currency": "CNY",
+      "sales": 56000,
+      "shop_rating": 4.7,
+      "fetched_at": "2026-05-14T12:06:46.859067+00:00",
+      "score": 0.27051774051403316,
+      "tags": [
+        "最低价",
+        "推荐"
+      ]
+    },
+    {
+      "id": "032e682edae3a258a2606375",
+      "platform": "demo",
+      "title": "罗马仕 ROMOSS 20000mAh 充电宝 大容量 18W 快充",
+      "price": 69.0,
+      "url": "https://example.com/demo/romoss-powerbank-20000",
+      "currency": "CNY",
+      "sales": 74000,
+      "shop_rating": 4.6,
+      "fetched_at": "2026-05-14T12:06:46.859082+00:00",
+      "score": 0.271047073501519,
+      "tags": [
+        "推荐"
+      ]
+    },
+    {
+      "id": "19c55a01ea04a2f1e26d5fa7",
+      "platform": "demo",
+      "title": "小米 20000mAh 充电宝 22.5W 快充 便携移动电源",
+      "price": 79.0,
+      "url": "https://example.com/demo/xiaomi-powerbank-20000",
+      "currency": "CNY",
+      "sales": 32000,
+      "shop_rating": 4.8,
+      "fetched_at": "2026-05-14T12:06:46.859036+00:00",
+      "score": 0.26109650735547985,
+      "tags": [
+        "推荐"
+      ]
+    },
+    {
+      "id": "f6150f738e6b445dbf1feeb8",
+      "platform": "demo",
+      "title": "绿联 UGREEN 10000mAh 充电宝 30W 快充 口袋款",
+      "price": 99.0,
+      "url": "https://example.com/demo/ugreen-powerbank-10000",
+      "currency": "CNY",
+      "sales": 22000,
+      "shop_rating": 4.8,
+      "fetched_at": "2026-05-14T12:06:46.859075+00:00",
+      "score": 0.2535584053635508,
+      "tags": []
+    },
+    {
+      "id": "6ea89856d075a599fb1e48a0",
+      "platform": "demo",
+      "title": "Anker 安克 20000mAh 充电宝 PD 20W 双向快充",
+      "price": 129.0,
+      "url": "https://example.com/demo/anker-powerbank-20000",
+      "currency": "CNY",
+      "sales": 18000,
+      "shop_rating": 4.9,
+      "fetched_at": "2026-05-14T12:06:46.859055+00:00",
+      "score": 0.2507866923517327,
+      "tags": []
+    }
+  ],
+  "summary": {
+    "total": 5,
+    "lowestPrice": 59.9,
+    "recommendedIds": [
+      "032e682edae3a258a2606375",
+      "2a4b782879ee993d513caa64",
+      "19c55a01ea04a2f1e26d5fa7"
+    ]
+  }
+}
+

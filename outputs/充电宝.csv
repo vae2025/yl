@@ -1,0 +1,6 @@
+platform,title,price,sales,shop_rating,url,fetched_at,score,tags
+demo,Baseus 倍思 10000mAh 充电宝 20W 快充,59.9,56000,4.7,https://example.com/demo/baseus-powerbank-10000,2026-05-14T12:06:46.859067+00:00,0.27051774051403316,"最低价,推荐"
+demo,罗马仕 ROMOSS 20000mAh 充电宝 大容量 18W 快充,69.0,74000,4.6,https://example.com/demo/romoss-powerbank-20000,2026-05-14T12:06:46.859082+00:00,0.271047073501519,推荐
+demo,小米 20000mAh 充电宝 22.5W 快充 便携移动电源,79.0,32000,4.8,https://example.com/demo/xiaomi-powerbank-20000,2026-05-14T12:06:46.859036+00:00,0.26109650735547985,推荐
+demo,绿联 UGREEN 10000mAh 充电宝 30W 快充 口袋款,99.0,22000,4.8,https://example.com/demo/ugreen-powerbank-10000,2026-05-14T12:06:46.859075+00:00,0.2535584053635508,
+demo,Anker 安克 20000mAh 充电宝 PD 20W 双向快充,129.0,18000,4.9,https://example.com/demo/anker-powerbank-20000,2026-05-14T12:06:46.859055+00:00,0.2507866923517327,
