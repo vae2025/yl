@@ -196,12 +196,12 @@ async def task_export(request: Request) -> FileResponse | JSONResponse:
 
 
 routes = [
-    Route("/api/health", health, methods=["GET"]),
-    Route("/api/run", run, methods=["POST"]),
-    Route("/api/task/{task_id:str}", task_status, methods=["GET"]),
-    Route("/api/task/{task_id:str}/result", task_result, methods=["GET"]),
-    Route("/api/task/{task_id:str}/trend", task_trend, methods=["GET"]),
-    Route("/api/task/{task_id:str}/export", task_export, methods=["GET"]),
+    Route("/pcapi/health", health, methods=["GET"]),
+    Route("/pcapi/run", run, methods=["POST"]),
+    Route("/pcapi/task/{task_id:str}", task_status, methods=["GET"]),
+    Route("/pcapi/task/{task_id:str}/result", task_result, methods=["GET"]),
+    Route("/pcapi/task/{task_id:str}/trend", task_trend, methods=["GET"]),
+    Route("/pcapi/task/{task_id:str}/export", task_export, methods=["GET"]),
     Route("/", lambda _: PlainTextResponse("OK"), methods=["GET"]),
 ]
 

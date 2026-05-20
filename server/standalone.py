@@ -113,12 +113,16 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_GET(self) -> None:
         parsed = urlparse(self.path)
-        if parsed.path == "/api/health":
+        path = parsed.path
+        if path.startswith("/api/"):
+            path = "/pcapi/" + path.removeprefix("/api/")
+
+        if path == "/pcapi/health":
             self._send_json(200, {"ok": True})
             return
 
-        if parsed.path.startswith("/api/task/"):
-            parts = parsed.path.split("/")
+        if path.startswith("/pcapi/task/"):
+            parts = path.split("/")
             if len(parts) >= 4:
                 task_id = parts[3]
                 sub = "/".join(parts[4:]) if len(parts) > 4 else ""
@@ -221,7 +225,11 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_POST(self) -> None:
         parsed = urlparse(self.path)
-        if parsed.path == "/api/run":
+        path = parsed.path
+        if path.startswith("/api/"):
+            path = "/pcapi/" + path.removeprefix("/api/")
+
+        if path == "/pcapi/run":
             body = self._read_json_body()
             keyword = str(body.get("keyword", "")).strip()
             if not keyword:
@@ -273,4 +281,3 @@ def main(argv: list[str] | None = None) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

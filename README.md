@@ -33,7 +33,7 @@ python -m price_compare --keyword 充电宝 --demo --export all --out outputs
 ### 3) 启动演示后端
 
 ```bash
-uvicorn server.app:app --host 0.0.0.0 --port 8000
+python -m uvicorn server.app:app --host 0.0.0.0 --port 8000
 ```
 
 ### 4) 启动演示前端
@@ -45,6 +45,16 @@ npm run dev -- --host 0.0.0.0 --port 5173
 ```
 
 浏览器打开 Vite 提示的地址，输入关键词即可运行。
+
+## 免依赖一键启动（推荐用于受限环境）
+
+如果你的环境里经常出现 `no healthy upstream` 或 `uvicorn/vite not found`，可以用单进程独立服务（同时提供前端静态资源与 API）：
+
+```bash
+python -m server --host 0.0.0.0 --port 5173
+```
+
+然后访问：`http://localhost:5173/`（API 前缀为 `/pcapi`）。
 
 ## 真实平台采集说明（京东/淘宝/拼多多）
 

@@ -43,6 +43,8 @@ export type TrendResponse = {
   series: { productId: string; title: string; points: { ts: string; value: number }[] }[];
 };
 
+const API_BASE = "/pcapi";
+
 async function http<T>(path: string, init?: RequestInit): Promise<T> {
   const res = await fetch(path, init);
   if (!res.ok) {
@@ -53,7 +55,7 @@ async function http<T>(path: string, init?: RequestInit): Promise<T> {
 }
 
 export async function runTask(req: RunRequest): Promise<RunResponse> {
-  return http<RunResponse>("/api/run", {
+  return http<RunResponse>(`${API_BASE}/run`, {
     method: "POST",
     headers: { "content-type": "application/json" },
     body: JSON.stringify(req)
@@ -61,18 +63,17 @@ export async function runTask(req: RunRequest): Promise<RunResponse> {
 }
 
 export async function getTaskStatus(taskId: string): Promise<TaskStatus> {
-  return http<TaskStatus>(`/api/task/${taskId}`);
+  return http<TaskStatus>(`${API_BASE}/task/${taskId}`);
 }
 
 export async function getResult(taskId: string): Promise<ResultResponse> {
-  return http<ResultResponse>(`/api/task/${taskId}/result`);
+  return http<ResultResponse>(`${API_BASE}/task/${taskId}/result`);
 }
 
 export async function getTrend(taskId: string): Promise<TrendResponse> {
-  return http<TrendResponse>(`/api/task/${taskId}/trend`);
+  return http<TrendResponse>(`${API_BASE}/task/${taskId}/trend`);
 }
 
 export function exportUrl(taskId: string, format: "json" | "csv" | "html"): string {
-  return `/api/task/${taskId}/export?format=${format}`;
+  return `${API_BASE}/task/${taskId}/export?format=${format}`;
 }
-
