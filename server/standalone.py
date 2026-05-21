@@ -121,6 +121,29 @@ class Handler(BaseHTTPRequestHandler):
             self._send_json(200, {"ok": True})
             return
 
+        if path == "/pcapi/run":
+            q = parse_qs(parsed.query or "")
+            keyword = (q.get("keyword", [""])[0] or "").strip()
+            if not keyword:
+                self._send_json(400, {"error": "keyword is required"})
+                return
+            platforms_txt = (q.get("platforms", [""])[0] or "").strip()
+            platforms = [p for p in platforms_txt.split(",") if p]
+            payload = {
+                "keyword": keyword,
+                "platforms": platforms,
+                "limitPerPlatform": int(q.get("limitPerPlatform", ["20"])[0] or 20),
+                "concurrency": int(q.get("concurrency", ["3"])[0] or 3),
+                "demoMode": (q.get("demoMode", ["0"])[0] or "0") in ("1", "true", "True", "yes", "on"),
+            }
+            task_id = uuid4().hex
+            task = TaskState(task_id=task_id, keyword=keyword)
+            tasks[task_id] = task
+            t = threading.Thread(target=_run_task, args=(task, payload), daemon=True)
+            t.start()
+            self._send_json(200, {"taskId": task_id})
+            return
+
         if path.startswith("/pcapi/task/"):
             parts = path.split("/")
             if len(parts) >= 4:

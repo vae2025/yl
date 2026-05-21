@@ -94,12 +94,23 @@ async def health(_: Request) -> JSONResponse:
 
 
 async def run(request: Request) -> JSONResponse:
-    try:
-        body = await request.json()
-    except Exception:
-        return _bad_request("invalid json")
-    if not isinstance(body, dict):
-        return _bad_request("invalid payload")
+    body: dict
+    if request.method == "GET":
+        qp = request.query_params
+        body = {
+            "keyword": qp.get("keyword", ""),
+            "platforms": [p for p in (qp.get("platforms", "")).split(",") if p],
+            "limitPerPlatform": qp.get("limitPerPlatform", "20"),
+            "concurrency": qp.get("concurrency", "3"),
+            "demoMode": qp.get("demoMode", "0") in ("1", "true", "True", "yes", "on"),
+        }
+    else:
+        try:
+            body = await request.json()
+        except Exception:
+            return _bad_request("invalid json")
+        if not isinstance(body, dict):
+            return _bad_request("invalid payload")
 
     keyword = str(body.get("keyword", "")).strip()
     if not keyword:
@@ -197,7 +208,7 @@ async def task_export(request: Request) -> FileResponse | JSONResponse:
 
 routes = [
     Route("/pcapi/health", health, methods=["GET"]),
-    Route("/pcapi/run", run, methods=["POST"]),
+    Route("/pcapi/run", run, methods=["GET", "POST"]),
     Route("/pcapi/task/{task_id:str}", task_status, methods=["GET"]),
     Route("/pcapi/task/{task_id:str}/result", task_result, methods=["GET"]),
     Route("/pcapi/task/{task_id:str}/trend", task_trend, methods=["GET"]),

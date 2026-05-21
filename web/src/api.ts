@@ -55,11 +55,13 @@ async function http<T>(path: string, init?: RequestInit): Promise<T> {
 }
 
 export async function runTask(req: RunRequest): Promise<RunResponse> {
-  return http<RunResponse>(`${API_BASE}/run`, {
-    method: "POST",
-    headers: { "content-type": "application/json" },
-    body: JSON.stringify(req)
-  });
+  const q = new URLSearchParams();
+  q.set("keyword", req.keyword);
+  q.set("platforms", req.platforms.join(","));
+  q.set("limitPerPlatform", String(req.limitPerPlatform));
+  q.set("concurrency", String(req.concurrency));
+  q.set("demoMode", req.demoMode ? "1" : "0");
+  return http<RunResponse>(`${API_BASE}/run?${q.toString()}`);
 }
 
 export async function getTaskStatus(taskId: string): Promise<TaskStatus> {
