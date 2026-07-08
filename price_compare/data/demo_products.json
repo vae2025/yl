@@ -1,0 +1,51 @@
+[
+  {
+    "title": "小米 20000mAh 充电宝 22.5W 快充 便携移动电源",
+    "price": 79.0,
+    "sales": 32000,
+    "shop_rating": 4.8,
+    "url": "https://example.com/demo/xiaomi-powerbank-20000"
+  },
+  {
+    "title": "Anker 安克 20000mAh 充电宝 PD 20W 双向快充",
+    "price": 129.0,
+    "sales": 18000,
+    "shop_rating": 4.9,
+    "url": "https://example.com/demo/anker-powerbank-20000"
+  },
+  {
+    "title": "Baseus 倍思 10000mAh 充电宝 20W 快充",
+    "price": 59.9,
+    "sales": 56000,
+    "shop_rating": 4.7,
+    "url": "https://example.com/demo/baseus-powerbank-10000"
+  },
+  {
+    "title": "绿联 UGREEN 10000mAh 充电宝 30W 快充 口袋款",
+    "price": 99.0,
+    "sales": 22000,
+    "shop_rating": 4.8,
+    "url": "https://example.com/demo/ugreen-powerbank-10000"
+  },
+  {
+    "title": "罗马仕 ROMOSS 20000mAh 充电宝 大容量 18W 快充",
+    "price": 69.0,
+    "sales": 74000,
+    "shop_rating": 4.6,
+    "url": "https://example.com/demo/romoss-powerbank-20000"
+  },
+  {
+    "title": "Apple iPhone 15 128GB 黑色",
+    "price": 5399.0,
+    "sales": 8000,
+    "shop_rating": 4.9,
+    "url": "https://example.com/demo/iphone-15-128"
+  },
+  {
+    "title": "iPhone 15 128GB 蓝色 官方正品",
+    "price": 5299.0,
+    "sales": 6500,
+    "shop_rating": 4.8,
+    "url": "https://example.com/demo/iphone-15-128-blue"
+  }
+]
